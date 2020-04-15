@@ -1,0 +1,14 @@
+{% extends 'blog/base_blog.html' %}
+{% block content %}
+<h1 class="mb-5"> Posts: </h1>
+    {% for n in posts %}
+        <div class="card mb-4">
+          <div class="card-header">
+                {{ n.date_pub}}
+
+          </div>
+        </div>
+
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'blog/base_blog.html' %}
+
+
+
+{% block content %}
+<h1 class="mb-5"> Posts: </h1>
+<div class="card mb-4">
+          <div class="card-header">
+   <h3> {{ post.title }} </h3>
+          </div>
+</div>
+
+<div class="card mb-3" style="max-width: 18rem;">
+  <div class="card-header">{{ post.title }}</div>
+  <div class="card-body">
+    <h5 class="card-title">{{ post.date_pub }}</h5>
+    <p class="card-text">{{ post.body }}</p>
+  </div>
+</div>
+
+
+{% endblock %}
